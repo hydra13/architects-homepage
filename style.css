@@ -1,0 +1,30 @@
+html {
+    background: #FFF;
+}
+
+main {
+    margin: 0 auto;
+    top: 92px;
+    max-width: 1463px;
+    min-width: 666px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.subtitle {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.title {
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 83px;
+    color: #000000;
+}
