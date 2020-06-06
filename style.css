@@ -3,12 +3,23 @@ html {
 }
 
 main {
-    margin: 0 auto;
-    top: 92px;
+    margin: 92px auto 0;
     max-width: 1463px;
     min-width: 666px;
+    min-height: 729px;
     display: flex;
     flex-flow: row nowrap;
+    padding-left: 134px;
+    /* background: lightcyan; */
+}
+
+.left-side {
+    width: 532px;
+    /* background: #c9c9c9; */
+    display: flex; 
+    flex-flow: column wrap; 
+    justify-content: space-between;
+    position: relative;
 }
 
 .subtitle {
@@ -27,4 +38,79 @@ main {
     font-size: 64px;
     line-height: 83px;
     color: #000000;
+    max-width: 305px;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    left: 24%;
+    top: 65%;
+}
+
+.main-button {
+    display: block;
+    width: 96px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+}
+
+.buttons:after {
+    content: "";
+    position: absolute;
+    background: #F2F2F2;
+    height: 2px;
+    width: 300px;
+    top: 50%;
+    left: 100%;
+}
+
+.current-button {
+    color: #BDBDBD;
+}
+
+.pages {
+    max-width: 140px;
+    display: flex;
+    justify-content: space-between;
+    /* background: lightcoral; */
+}
+
+.page {
+    display: block;
+    background: brown;
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #BDBDBD;
+}
+.pages:first-child {
+    background: blue;
+}
+.pages:first-child::after {
+    content: "";
+    /* background: #E0E0E0; */
+    background: black;
+    position: absolute;
+    left: 70px;
+    width: 2px;
+    height: 44px;
+    z-index: 1;
+}
+
+.center-side {
+    width: 666px;
+    background: #eee;
+}
+
+.toolbar {
+    width: 266px;
+    background: #e3e3e3;
 }
